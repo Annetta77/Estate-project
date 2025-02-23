@@ -2,13 +2,21 @@
 @use '../variables';
 
 .nav {
-  &.open {
-    display: block;
+  @media screen and (max-width: 1023px) {
+    display: none;
   }
-  display: none;
-  position: relative;
+  &.open {
+    @media screen and (max-width: 1023px) {
+      display: block;
+    }
+  }
 
-  &__social-mob-active {
+  @media screen and (min-width: 1024px) {
+    display: none;
+    position: relative;
+  }
+
+  &__social-mob-active.open {
     display: block;
     @media screen and (max-width: 1023px) {
     }
@@ -42,9 +50,10 @@
     & > li:first-of-type {
       margin-bottom: 0;
       @media screen and (min-width: 1024px) {
-display: flex;
-flex-direction: row;
-background-repeat: no-repeat;      }
+        display: flex;
+        flex-direction: row;
+        background-repeat: no-repeat;
+      }
     }
 
     &-mob-active a {
@@ -120,10 +129,10 @@ background-repeat: no-repeat;      }
 
   &__social-list {
     @media screen and (max-width: 1023px) {
+      display: none;
       position: absolute;
       display: flex;
       bottom: 0;
-      z-index: 999;
     }
 
     @media screen and (min-width: 1024px) {

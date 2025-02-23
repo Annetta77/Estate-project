@@ -3,16 +3,23 @@ document.addEventListener('DOMContentLoaded', function () {
   const navMenu = document.getElementById('nav');
   const navSocial = document.getElementById('nav-social');
   const select = document.getElementById('select');
+  const screenWidth = window.innerWidth;
+
+  function updateSelect() {
+    if (screenWidth < 1023) {
+      select.setAttribute('multiple', 'multiple');
+    } else {
+      select.removeAttribute('multiple');
+    }
+  }
+
+  updateSelect(select);
+
+  window.addEventListener('resize', updateSelect);
 
   burgerButton.addEventListener('click', function () {
     navMenu.classList.toggle('open');
-    navSocial.classList.toggle('nav__social-mob-active');
+    navSocial.classList.toggle('open');
     burgerButton.classList.toggle('open');
-
-    if (select.hasAttribute('multiple')) {
-      select.removeAttribute('multiple');
-    } else {
-      select.setAttribute('multiple', 'multiple');
-    }
   });
 });
