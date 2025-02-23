@@ -117,6 +117,10 @@
     display: flex;
     color: #0048ce;
     position: relative;
+    width: 18px;
+    border: none;
+    background-color: #E5E5E5;
+    top: 3px;
   }
 }
 @media screen and (min-width: 1024px) {

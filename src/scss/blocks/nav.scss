@@ -98,6 +98,10 @@
       display: flex;
       color: variables.$blueText;
       position: relative;
+      width: 18px;
+      border: none;
+      background-color: #E5E5E5;
+      top: 3px;
     }
 
     &--link {

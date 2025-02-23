@@ -24,6 +24,7 @@
   align-items: center;
   padding-top: 18px;
   z-index: 6;
+  background-color: #FFFFFF;
 }
 @media screen and (min-width: 1024px) {
   .page-header {
@@ -38,6 +39,7 @@
     justify-content: space-between;
     margin: 0 auto;
     height: 76px;
+    background-color: #E5E5E5;
   }
 }
 .page-header__btn {
@@ -49,11 +51,12 @@
   src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
   font-size: 16px;
   font-weight: 400;
+  background-color: #FFFFFF;
 }
 @media screen and (min-width: 1024px) {
   .page-header__btn {
     padding: 0;
-    background-color: #e5e5e5;
+    background-color: #E5E5E5;
     text-decoration: underline;
   }
 }

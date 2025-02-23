@@ -6,13 +6,12 @@ body {
   justify-content: center;
   align-items: center;
   min-width: 375px;
-  // width: 100%;
   width: 375px;
   margin: 0 auto;
 
   @media screen and (min-width: 1024px) {
     width: 1440px;
-    background-color: #e5e5e5;
+    background-color: #E5E5E5;
   }
 }
 
@@ -27,20 +26,8 @@ a:hover {
 }
 
 select {
-  // appearance: none; /* Убираем стандартный стиль */
-  // -webkit-appearance: none; /* Для WebKit-браузеров */
-  // -moz-appearance: none;
-  // width: 18px;
-  // border: none;
-  // background: #e5e5e5;
-  // color: variables.$blueText;
-  // margin-left: 5px;
-  // margin-top: 3px;
   @media screen and (max-width: 1023px) {
     display: none;
-    // &:selection {
-    //   background: #e5e5e5;
-    // }
   }
 
   &:focus {

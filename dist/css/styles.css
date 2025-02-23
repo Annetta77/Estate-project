@@ -34,7 +34,7 @@ body {
 @media screen and (min-width: 1024px) {
   body {
     width: 1440px;
-    background-color: #e5e5e5;
+    background-color: #E5E5E5;
   }
 }
 
@@ -103,6 +103,7 @@ select:focus {
   align-items: center;
   padding-top: 18px;
   z-index: 6;
+  background-color: #FFFFFF;
 }
 @media screen and (min-width: 1024px) {
   .page-header {
@@ -117,6 +118,7 @@ select:focus {
     justify-content: space-between;
     margin: 0 auto;
     height: 76px;
+    background-color: #E5E5E5;
   }
 }
 .page-header__btn {
@@ -128,11 +130,12 @@ select:focus {
   src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
   font-size: 16px;
   font-weight: 400;
+  background-color: #FFFFFF;
 }
 @media screen and (min-width: 1024px) {
   .page-header__btn {
     padding: 0;
-    background-color: #e5e5e5;
+    background-color: #E5E5E5;
     text-decoration: underline;
   }
 }
@@ -305,6 +308,10 @@ select:focus {
     display: flex;
     color: #0048ce;
     position: relative;
+    width: 18px;
+    border: none;
+    background-color: #E5E5E5;
+    top: 3px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -431,7 +438,7 @@ select:focus {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #E5E5E5;
+  background-color: #FFFFFF;
 }
 
 .main-header {
