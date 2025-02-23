@@ -12,13 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     } else {
       select.removeAttribute('multiple');
     }
-
-    select.forEach((select) => {
-      if (window.innerWidth < 1024) {
-        select.size = select.options.length;
-      }
-    });
-  }
+  };
 
   updateSelect(select);
 
