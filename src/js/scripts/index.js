@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const select = document.getElementById('select');
 
   burgerButton.addEventListener('click', function () {
-    navMenu.classList.toggle('nav__list-mob-active');
+    navMenu.classList.toggle('open');
     navSocial.classList.toggle('nav__social-mob-active');
     burgerButton.classList.toggle('open');
 

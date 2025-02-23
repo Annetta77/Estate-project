@@ -2,6 +2,9 @@
 @use '../variables';
 
 .nav {
+  &.open {
+    display: block;
+  }
   display: none;
   position: relative;
 

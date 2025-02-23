@@ -193,6 +193,9 @@ select:focus {
   display: none;
   position: relative;
 }
+.nav.open {
+  display: block;
+}
 .nav__social-mob-active {
   display: block;
 }
