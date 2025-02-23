@@ -59,6 +59,7 @@ select {
 @media screen and (max-width: 1023px) {
   select {
     width: 154px;
+    height: 128px;
   }
   select:selection {
     background: #e5e5e5;
