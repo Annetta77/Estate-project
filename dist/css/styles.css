@@ -152,6 +152,31 @@ select:focus {
   }
 }
 
+@media screen and (min-width: 1024px) {
+  .mob-select {
+    display: none;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .mob-select {
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    height: 128px;
+    display: flex;
+    background-color: #ffffff;
+    margin-top: 10px;
+    list-style: none;
+    color: #0048ce;
+    font-family: "GolosText", sans-serif;
+    src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+
 .page-header__logo {
   font-family: "Merriweather", serif;
   src: url(../../src/fonts/Merriweather-Bold.ttf);
@@ -280,23 +305,6 @@ select:focus {
     margin-right: 175px;
   }
 }
-@media screen and (max-width: 1023px) {
-  .nav__select-list {
-    width: 154px;
-    height: 128px;
-    display: flex;
-    background-color: #ffffff;
-    margin-top: 10px;
-    list-style: none;
-  }
-}
-@media screen and (max-width: 1023px) and (min-width: 1024px) {
-  .nav__select-list {
-    display: block;
-    color: #0048ce;
-    background-color: #f1f4fd;
-  }
-}
 @media screen and (min-width: 320px) {
   .nav__select-list__list-item {
     display: block;
@@ -361,6 +369,11 @@ select:focus {
 .nav__list-item--link {
   text-decoration: none;
   color: #0048ce;
+}
+@media screen and (max-width: 1023px) {
+  .nav__list-item--select {
+    display: none;
+  }
 }
 
 .nav-social {

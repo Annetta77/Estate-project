@@ -1,0 +1,23 @@
+@use '../fonts';
+@use '../variables';
+
+.mob-select {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+
+  @media screen and (max-width: 1023px) {
+    display: flex;
+    flex-direction: column;
+    width: 154px;
+    height: 128px;
+    display: flex;
+    background-color: variables.$whiteText;
+    margin-top: 10px;
+    list-style: none;
+    color: variables.$blueText;
+    @include fonts.golosFont;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
