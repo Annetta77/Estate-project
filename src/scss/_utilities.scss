@@ -37,11 +37,7 @@ select {
   margin-left: 5px;
   margin-top: 3px;
   @media screen and (max-width: 1023px) {
-    appearance: none; /* Убираем стандартный стиль */
-    -webkit-appearance: none; /* Для WebKit-браузеров */
-    -moz-appearance: none;
-    width: 154px;
-    height: 100%;
+    display: none;
     // &:selection {
     //   background: #e5e5e5;
     // }
