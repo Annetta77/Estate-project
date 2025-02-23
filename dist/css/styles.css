@@ -102,6 +102,7 @@ select:focus {
   padding: 24px;
   align-items: center;
   padding-top: 18px;
+  z-index: 6;
 }
 @media screen and (min-width: 1024px) {
   .page-header {
