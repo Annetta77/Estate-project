@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Merriweather", serif;
   src: url(../../src/fonts/Merriweather-Bold.ttf);
@@ -49,6 +50,9 @@ a:hover {
 }
 
 select {
+  appearance: none; /* Убираем стандартный стиль */
+  -webkit-appearance: none; /* Для WebKit-браузеров */
+  -moz-appearance: none;
   width: 18px;
   border: none;
   background: #e5e5e5;
