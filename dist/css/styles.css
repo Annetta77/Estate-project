@@ -208,12 +208,12 @@ select:focus {
   .nav {
     display: none;
     height: 0;
+    z-index: 5;
   }
 }
 @media screen and (max-width: 1023px) {
   .nav.open {
     display: block;
-    z-index: 5;
   }
 }
 @media screen and (min-width: 1024px) {
