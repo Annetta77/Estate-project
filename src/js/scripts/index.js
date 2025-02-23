@@ -16,6 +16,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
   updateSelect(select);
 
+  select.forEach((select) => {
+    if (window.innerWidth < 1024) {
+      select.size = select.options.length;
+    }
+  });
+
   window.addEventListener('resize', updateSelect);
 
   burgerButton.addEventListener('click', function () {
