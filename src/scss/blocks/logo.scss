@@ -1,0 +1,36 @@
+@use '../fonts';
+@use '../variables';
+
+.page-header__logo {
+  @include fonts.merriBoldFont;
+  text-decoration: none;
+  font-size: 25px;
+  line-height: 31px;
+  color: variables.$blueText;
+
+  &:active {
+    color: variables.$blueText;
+  }
+
+  @media screen and (min-width: 1024px) {
+    font-size: 36px;
+line-height: 50px; 
+    margin-right: 175px;
+  }
+}
+.page-footer__logo {
+  @include fonts.merriBoldFont;
+  text-decoration: none;
+  font-size: 25px;
+  margin-bottom: 18px;
+  color: variables.$blueText;
+
+  &:active {
+    color: variables.$blueText;
+  }
+
+  @media screen and (min-width: 1024px) {
+    margin-bottom: 74px;
+font-size: 36px;
+line-height: 50px;  }
+}

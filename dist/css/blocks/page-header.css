@@ -1,0 +1,58 @@
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Bold.ttf);
+  font-weight: bold;
+  font-size: 36px;
+}
+@font-face {
+  font-family: "GolosText", sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Regular.ttf);
+  font-size: 18px;
+  font-weight: 400;
+}
+.page-header {
+  display: flex;
+  width: 375px;
+  justify-content: space-between;
+  padding: 24px;
+  align-items: center;
+  padding-top: 18px;
+}
+@media screen and (min-width: 1024px) {
+  .page-header {
+    width: 1280px;
+    font-family: "GolosText", sans-serif;
+    src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+    font-size: 16px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 76px;
+  }
+}
+.page-header__btn {
+  border: none;
+  color: #0048ce;
+  background-color: #ffffff;
+  padding-left: 110px;
+  font-family: "GolosText", sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+}
+@media screen and (min-width: 1024px) {
+  .page-header__btn {
+    padding: 0;
+    background-color: #e5e5e5;
+    text-decoration: underline;
+  }
+}

@@ -1,0 +1,62 @@
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Bold.ttf);
+  font-weight: bold;
+  font-size: 36px;
+}
+@font-face {
+  font-family: "GolosText", sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Regular.ttf);
+  font-size: 18px;
+  font-weight: 400;
+}
+.workers {
+  width: 327px;
+  margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+  .workers {
+    width: 1280px;
+    background-color: #E5E5E5;
+    margin-bottom: 80px;
+  }
+}
+.workers__title {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Regular.ttf);
+  font-size: 28px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: left;
+  color: #0048ce;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .workers__title {
+    font-size: 36px;
+    line-height: 120%;
+  }
+}
+.workers__list {
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .workers__list {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+  }
+}
+.workers__list-1 .workers__item:nth-child(4) .card__links--linkedin, .workers__list-2 .workers__item:nth-child(2) .card__links--linkedin {
+  left: 20px;
+}
+.workers__list-1, .workers__list-2 {
+  margin-bottom: 40px;
+}

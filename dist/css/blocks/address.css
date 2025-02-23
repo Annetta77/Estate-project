@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Bold.ttf);
+  font-weight: bold;
+  font-size: 36px;
+}
+@font-face {
+  font-family: "GolosText", sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Regular.ttf);
+  font-size: 18px;
+  font-weight: 400;
+}
+.address {
+  font-style: normal;
+  margin-bottom: 15px;
+  width: 300px;
+}
+.address__link {
+  text-decoration: none;
+  color: #0048ce;
+  display: inline-block;
+}

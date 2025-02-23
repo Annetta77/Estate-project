@@ -1,0 +1,63 @@
+@use '../fonts';
+@use '../variables';
+
+.card {
+  position: relative;
+  display: flex;
+  width: 327px;
+  height: 331px;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  text-align: center;
+  background-color: #FFFFFF;
+  border-radius: 20px;
+
+  @media screen and (min-width: 1024px) {
+    width: 290px;
+    height: 360px;
+    margin: 0;
+
+    &__img {
+      @media screen and (min-width: 1024px) {
+        width: 100%;
+        height: auto;
+        border: none;
+        border-radius: 10px;
+
+      }
+    }
+  }
+  &__name {
+    @include fonts.merriRegularFont;
+    font-size: 20px;
+    margin-bottom: 6px;
+    color: variables.$blackText;
+  }
+
+  &__description {
+    @include fonts.golosFont;
+    font-size: 14px;
+    color: #7d8cb4;
+  }
+
+  &__links {
+    &--instagram {
+      position: absolute;
+      background: url(../../src/images/instagram.svg);
+      width: 22px;
+      height: 22px;
+      left: 20px;
+      top: 20px;
+    }
+
+    &--linkedin {
+      position: absolute;
+      background: url(../../src/images/linkedin.svg);
+      width: 21px;
+      height: 21px;
+      left: 55px;
+      top: 20px;
+    }
+  }
+}

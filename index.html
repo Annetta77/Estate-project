@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Estate</title>
+    <link rel="stylesheet" href="dist/css/styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <a href="#" class="page-header__logo logo">Estate</a>
+      <nav id="nav" class="page-header__nav nav">
+        <ul class="nav__list nav__list-mob-active">
+          <li class=" nav__select nav__list-item ">
+            <a class="nav__list-item--link" href="#">Недвижимость</a>
+            <div class="nav__list-item--select"></div>
+            <div id='menu'>
+              <select id='select' class="nav__select-list">
+                <option value="list1" class="nav__select-item">Жилая</option>
+                <option value="list2" class="nav__select-item">
+                  Коммерческая
+                </option>
+                <option value="list3" class="nav__select-item">
+                  Инвестиционная
+                </option>
+                <option value="list4" class="nav__select-item">
+                  Эксклюзивная
+                </option>
+              </select>
+            </div>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-item--link" href="#">Услуги</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-item--link" href="#">Блог</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="nav__list-item--link" href="#">О компании</a>
+          </li>
+        </ul>
+        <ul id="nav-social" class="nav__social-list nav-social ">
+          <li class="nav-social__item--telegram">
+            <a class="nav-social__item--link" href="http://telegram.org"></a>
+          </li>
+          <li class="nav-social__item--whatsapp">
+            <a class="nav-social__item--link" href="http://whatsapp.com"></a>
+          </li>
+          <li class="nav-social__item--mob">
+            <a href="tel:+79998548585">+7 999 854 85 85</a>
+          </li>
+        </ul>
+        <div class="nav__mobile">
+          <a href="tel:+79998548585"> +7 999 854 85 85 — Москва </a><br />
+          <a href="+79144873838">+7 914 487 38 38 — Владивосток</a>
+        </div>
+      </nav>
+      <button class="page-header__btn" type="button">En</button>
+
+      <button class="burger" id="burgerButton">
+        <div></div>
+        <div></div>
+        <div></div>
+      </button>
+    </header>
+    <main class="page-main">
+      <section class="page-main__header main-header">
+        <div class="main-header__cont">
+          <div class="main-header__text-cont">
+            <h1 class="main-header__title">
+              Доверие и сервисная модель — основные показатели успеха <br />
+              в работе компании
+            </h1>
+            <p class="main-header__text">
+              Рынок недвижимости в 2025 году сталкивается с серьезными вызовами.
+              Изменились ключевые тенденции <br />
+              и запросы инвесторов.
+            </p>
+
+            <p class="main-header__text">
+              Объективный подход к анализу рынка, детальное изучение перспектив
+              объектов, эффективные бизнес-модели и подтвержденная ликвидность —
+              всё это способствует сохранению и увеличению капитала наших
+              инвесторов.
+            </p>
+          </div>
+          <div class="main-header__social-cont">
+            <button class="main-header__button" type="button">
+              Связаться напрямую
+              <span class="main-header__arrow-cont"
+                ><span class="main-header__arrow"></span
+              ></span>
+            </button>
+            <div class="main-header__photo-cont photo-cont">
+              <p class="photo-cont__text">Ярослав Попов</p>
+              <p class="photo-cont__text">СЕО Estate</p>
+            </div>
+
+            <div class="main-header__links-cont">
+              <a
+                class="main-header__links-cont--instagram"
+                href="http://instagram.com"
+              ></a>
+              <a
+                class="main-header__links-cont--linkedin"
+                href="http://linkedin.com"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="page-main__workers workers">
+        <h2 class="workers__title">Инвестиционный отдел</h2>
+        <ul class="workers__list workers__list-1">
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><a href="http://instagram.com" class="card__links--instagram"></a
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-1.jpg"
+                width="290"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-1-1x.jpg"
+              />
+
+              <img src="src/images/Photo-1.jpg" />
+            </picture>
+            <h3 class="card__name">Анна Васильева</h3>
+            <p class="card__description">Операционный директор</p>
+          </li>
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><a href="http://instagram.com" class="card__links--instagram"></a
+              ><a href="http://linkedin.com" class="card__links--linkedin"></a
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-2.jpg"
+                width="290"
+              />
+
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-2-1x.jpg"
+              />
+
+              <img
+                src="./src/images/Photo-2.jpg"
+                width="327"
+                height="260"
+                alt="Елена Морозова"
+              />
+            </picture>
+            <h3 class="card__name">Елена Морозова</h3>
+            <p class="card__description">Инвестиционный консультант</p>
+          </li>
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><a href="http://instagram.com" class="card__links--instagram"></a
+              ><a href="http://linkedin.com" class="card__links--linkedin"></a
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-3.jpg"
+                width="290"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-3-1x.jpg"
+              />
+
+              <img
+                src="./src/images/Photo-3.jpg"
+                width="327"
+                height="260"
+                alt="Мария Кузнецова"
+              />
+            </picture>
+            <h3 class="card__name">Мария Кузнецова</h3>
+            <p class="card__description">Инвестиционный консультант</p>
+          </li>
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><a href="http://linkedin.com" class="card__links--linkedin"></a
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-4.jpg"
+                width="290"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-4-1x.jpg"
+              />
+
+              <img
+                src="./src/images/Photo-4.jpg"
+                width="327"
+                height="260"
+                alt="Алексей Смирнов"
+              />
+            </picture>
+            <h3 class="card__name">Алексей Смирнов</h3>
+            <p class="card__description">Инвестиционный консультант</p>
+          </li>
+        </ul>
+      </section>
+      <section class="page-main__workers workers">
+        <h2 class="workers__title">Маркетинг</h2>
+        <ul class="workers__list workers__list-2">
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><a href="http://instagram.com" class="card__links--instagram"></a
+              ><a href="http://linkedin.com" class="card__links--linkedin"></a
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-5.jpg"
+                width="290"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-5-1x.jpg"
+              />
+
+              <img
+                src="./src/images/Photo-5.jpg"
+                width="327"
+                height="260"
+                alt="Дмитрий Иванов"
+              />
+            </picture>
+            <h3 class="card__name">Дмитрий Иванов</h3>
+            <p class="card__description">Руководитель отдела маркетинга</p>
+          </li>
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><span class="card__links-cont"
+                ><a
+                  href="http://linkedin.com"
+                  class="card__links--linkedin"
+                ></a></span
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-6.jpg"
+                width="290"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-6-1x.jpg"
+              />
+
+              <img
+                src="./src/images/Photo-6.jpg"
+                width="327"
+                height="260"
+                alt="Ольга Соколова "
+              />
+            </picture>
+            <h3 class="card__name">Ольга Соколова</h3>
+            <p class="card__description">Главный редактор</p>
+          </li>
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><a href="http://instagram.com" class="card__links--instagram"></a
+              ><a href="http://linkedin.com" class="card__links--linkedin"></a
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-7.jpg"
+                width="290"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-7-1x.jpg"
+              />
+
+              <img
+                src="./src/images/Photo-7.jpg"
+                width="327"
+                height="260"
+                alt="Сергей Петров"
+              />
+            </picture>
+            <h3 class="card__name">Сергей Петров</h3>
+            <p class="card__description">Арт-директор</p>
+          </li>
+          <li class="workers__item card">
+            <span class="card__links-cont"
+              ><a href="http://instagram.com" class="card__links--instagram"></a
+              ><a href="http://linkedin.com" class="card__links--linkedin"></a
+            ></span>
+            <picture class="card__img">
+              <source
+                media="(min-width: 1024px)"
+                srcset="src/images/Photo-8.jpg"
+                width="290"
+              />
+              <source
+                media="(min-width: 320px)"
+                srcset="src/images/Photo-8-1x.jpg"
+              />
+
+              <img
+                src="./src/images/Photo-8.jpg"
+                width="327"
+                height="260"
+                alt="Наталья Федорова "
+              />
+            </picture>
+            <h3 class="card__name">Наталья Федорова</h3>
+            <p class="card__description">Маркетолог</p>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__cont">
+        <a href="#" class="page-footer__logo logo">Estate</a>
+        <address class="page-footer__address address">
+          <p class="address__text">Москва, БЦ «Лотос», ул. Ленинская, 19</p>
+          <a class="address__link" href="tel:+79998548585"
+            >+7 999 854 85 85 — Москва</a
+          >
+          <a class="address__link" href="tel:+79144873838"
+            >+7 914 487 38 38 — Владивосток</a
+          >
+          <br />
+          <a class="address__link" href="mailto:hello@estate.ru"
+            >hello@estate.ru</a
+          >
+        </address>
+        <ul class="page-footer__social-list footer-social">
+          <li class="footer-social__item--telegram">
+            <a href="http://telegram.org"></a>
+          </li>
+          <li class="footer-social__item--whatsapp">
+            <a href="http://whatsapp.com"></a>
+          </li>
+        </ul>
+      </div>
+      <section class="page-footer__lists lists">
+        <ul class="lists__first-list first-list">
+          <li>
+            <div class="lists__arrow-cont">
+              <h3 class="lists__item lists__item--active">О компании</h3>
+              <div class="lists__arrow-list lists__arrow-cont--top"></div>
+            </div>
+            <ul class="lists__last-list--active">
+              <li>О нас</li>
+              <li>Команда</li>
+              <li>Контакты</li>
+              <li>Блог</li>
+            </ul>
+          </li>
+          <li>
+            <div class="lists__arrow-cont">
+              <h3 class="lists__item">Недвижимость</h3>
+              <div class="lists__arrow-list lists__arrow-cont--bottom"></div>
+            </div>
+
+            <ul class="lists__last-list">
+              <li>Жилая</li>
+              <li>Коммерческая</li>
+              <li>Инвестиционная</li>
+            </ul>
+          </li>
+          <li>
+            <div class="lists__arrow-cont">
+              <h3 class="lists__item">Услуги</h3>
+              <div class="lists__arrow-list lists__arrow-cont--bottom"></div>
+            </div>
+
+            <ul class="lists__last-list">
+              <li>По подбору недвижимости</li>
+              <li>Юридическое сопровождение</li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+      <p class="page-footer__copyright">
+        © 2025 Estate. Все права защищены. При копировании <br />
+        материалов сайта ссылка на источник обязательна. Политика
+        конфиденциальности • Соглашение об использовании
+      </p>
+    </footer>
+    <script src="dist/js/main.min.js"></script>
+  </body>
+</html>

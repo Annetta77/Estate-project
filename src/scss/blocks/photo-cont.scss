@@ -1,0 +1,31 @@
+@use '../fonts';
+@use '../variables';
+
+.photo-cont {
+  pointer-events: none;
+  &__text {
+    color: variables.$whiteText;
+    position: absolute;
+    margin-left: 24px;
+    bottom: 0;
+    &:first-of-type {
+      @include fonts.merriRegularFont;
+      font-size: 25px;
+      line-height: 120%;
+      margin-bottom: 66px;
+    }
+
+    &:last-of-type {
+      @include fonts.golosFont;
+      font-size: 15px;
+      line-height: 22px;
+      margin-bottom: 40px;
+    }
+    @media screen and (min-width: 1024px) {
+      height: 124px;
+      position: absolute;
+      margin-left: 910px;
+      bottom: -45px;
+    }
+  }
+}

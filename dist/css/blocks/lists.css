@@ -1,0 +1,127 @@
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Bold.ttf);
+  font-weight: bold;
+  font-size: 36px;
+}
+@font-face {
+  font-family: "GolosText", sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "Merriweather", serif;
+  src: url(../../src/fonts/Merriweather-Regular.ttf);
+  font-size: 18px;
+  font-weight: 400;
+}
+.lists {
+  list-style: none;
+}
+@media screen and (min-width: 1024px) {
+  .lists {
+    display: block;
+    width: 738px;
+    grid-area: b;
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+}
+.lists__item {
+  font-family: "GolosText", sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 28px;
+  padding: 14px 0 16px 0;
+  border-bottom: 1px solid #d9e4f8;
+  padding-bottom: 23px;
+}
+@media screen and (min-width: 1024px) {
+  .lists__item {
+    border: none;
+  }
+}
+.lists__item--active {
+  color: #799ee5;
+  margin-bottom: 5px;
+}
+@media screen and (min-width: 1024px) {
+  .lists__item {
+    color: #799ee5;
+  }
+}
+.lists__first-list {
+  list-style: none;
+}
+.lists__first-list > li:last-of-type .lists__item {
+  border-bottom: none;
+}
+@media screen and (min-width: 1024px) {
+  .lists__first-list {
+    display: flex;
+    flex-direction: row;
+    font-size: 16px;
+    line-height: 140%;
+  }
+}
+.lists__last-list {
+  list-style: none;
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .lists__last-list {
+    display: block;
+  }
+}
+.lists__last-list--active {
+  display: block;
+  list-style: none;
+  border-bottom: 1px solid #d9e4f8;
+  padding-bottom: 23px;
+}
+@media screen and (min-width: 1024px) {
+  .lists__last-list--active {
+    border: none;
+  }
+}
+.lists__last-list--active > li {
+  margin-bottom: 3px;
+}
+.lists__arrow-list {
+  width: 6px;
+  height: 6px;
+  border-top: 1px solid #0048ce;
+  border-right: 1px solid #0048ce;
+  margin-right: 60px;
+  right: 100px;
+}
+.lists__arrow-cont {
+  position: relative;
+}
+.lists__arrow-cont--top {
+  transform: rotate(-45deg);
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  margin-right: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .lists__arrow-cont--top {
+    display: none;
+  }
+}
+.lists__arrow-cont--bottom {
+  transform: rotate(135deg);
+  position: absolute;
+  bottom: 35px;
+  right: 0;
+  margin-right: 24px;
+}
+@media screen and (min-width: 1024px) {
+  .lists__arrow-cont--bottom {
+    display: none;
+  }
+}

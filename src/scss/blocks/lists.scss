@@ -1,0 +1,109 @@
+@use '../fonts';
+@use '../variables';
+
+.lists {
+  list-style: none;
+  @media screen and (min-width: 1024px) {
+    display: block;
+    width: 738px;
+    grid-area: b;
+    grid-column: 2;
+    grid-row: 1/2;
+  }
+
+  &__item {
+    @include fonts.golosFont;
+    font-size: 14px;
+    line-height: 28px;
+    padding: 14px 0 16px 0;
+    border-bottom: 1px solid #d9e4f8;
+    padding-bottom: 23px;
+    @media screen and (min-width: 1024px) {
+      border: none;
+      
+    }
+
+    &--active {
+      color: #799ee5;
+      margin-bottom: 5px;
+    }
+
+    @media screen and (min-width: 1024px) {
+      color: #799ee5;
+    }
+  }
+
+  &__first-list {
+    list-style: none;
+    & > li:last-of-type .lists__item {
+      border-bottom: none;
+    }
+
+    @media screen and (min-width: 1024px) {
+      display: flex;
+      flex-direction: row;
+      font-size: 16px;
+      line-height: 140%;
+    }
+  }
+
+  &__last-list {
+    list-style: none;
+    display: none;
+    @media screen and (min-width: 1024px) {
+      display: block;
+      
+    }
+
+    &--active {
+      display: block;
+      list-style: none;
+      border-bottom: 1px solid #d9e4f8;
+      padding-bottom: 23px;
+
+      @media screen and (min-width: 1024px) {
+        border: none;
+        
+      }
+
+      & > li {
+        margin-bottom: 3px;
+      }
+    }
+  }
+
+  &__arrow-list {
+    width: 6px;
+    height: 6px;
+    border-top: 1px solid variables.$blueText;
+    border-right: 1px solid variables.$blueText;
+    margin-right: 60px;
+    right: 100px;
+  }
+
+  &__arrow-cont {
+    position: relative;
+    &--top {
+      transform: rotate(-45deg);
+      position: absolute;
+      bottom: 35px;
+      right: 0;
+      margin-right: 24px;
+
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+
+    &--bottom {
+      transform: rotate(135deg);
+      position: absolute;
+      bottom: 35px;
+      right: 0;
+      margin-right: 24px;
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+}

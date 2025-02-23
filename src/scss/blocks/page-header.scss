@@ -1,0 +1,94 @@
+@use '../fonts';
+@use '../variables';
+
+.page-header {
+  display: flex;
+  width: 375px;
+  justify-content: space-between;
+  padding: 24px;
+  // margin-bottom: 15px;
+  align-items: center;
+  padding-top: 18px;
+
+  @media screen and (min-width: 1024px) {
+    width: 1280px;
+    @include fonts.golosFont;
+    font-size: 16px;
+    line-height: 140%;
+    padding: 0;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 76px;
+  }
+
+  // &__hamburger {
+  //   position: relative;
+  //   display: inline-block;
+  //   vertical-align: middle;
+  //   cursor: pointer;
+  //   width: 30px;
+  //   height: 19px;
+  //   background: variables.$whiteText;
+  //   border: none;
+  //   @media screen and (min-width: 1024px) {
+  //     display: none;
+  //   }
+  // }
+  // &__btn-hamb {
+  //   position: relative;
+  //   display: block;
+  //   width: 100%;
+  //   height: 1px;
+  //   cursor: pointer;
+  // }
+  // &__btn-hamb div {
+  //   width: 100%;
+  //   height: 100%;
+  //   background: variables.$blueText;
+  // }
+  // &__btn-hamb:before,
+  // &__btn-hamb:after {
+  //   content: '';
+  //   width: 100%;
+  //   height: 100%;
+  //   position: absolute;
+  //   left: 0;
+  //   background: variables.$blueText;
+  // }
+  // &__btn-hamb:before {
+  //   top: -10px;
+  // }
+  // &__btn-hamb:after {
+  //   top: 9px;
+  // }
+
+  &__btn {
+    border: none;
+    color: variables.$blueText;
+    background-color: variables.$whiteText;
+    padding-left: 110px;
+    @include fonts.golosFont;
+
+    @media screen and (min-width: 1024px) {
+      padding: 0;
+      background-color: #e5e5e5;
+      text-decoration: underline;
+    }
+  }
+
+//   &__btn-hamb.open  {
+//     transform: rotate(45deg);
+//     margin: 0;
+//   }
+
+//   &__btn-hamb:after.open {
+//     opacity: 0; /* Скрываем среднюю полосу */
+
+//   }
+
+//   &__btn-hamb:before.open {
+//     transform: rotate(95deg);
+//     margin: 0;
+//     right: 10px;
+// top: 4%;  }
+}

@@ -1,0 +1,43 @@
+@font-face {
+  font-family: 'Merriweather', serif;
+  src: url(../../src/fonts/Merriweather-Bold.ttf);
+  font-weight: bold;
+  font-size: 36px;
+}
+
+@font-face {
+  font-family: 'GolosText', sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Merriweather', serif;
+
+  src: url(../../src/fonts/Merriweather-Regular.ttf);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+@mixin golosFont {
+  font-family: 'GolosText', sans-serif;
+  src: url(../../src/fonts/GolosText-VariableFont_wght.ttf);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+@mixin merriBoldFont {
+  font-family: 'Merriweather', serif;
+  src: url(../../src/fonts/Merriweather-Bold.ttf);
+  font-weight: bold;
+  font-size: 36px;
+}
+
+@mixin merriRegularFont {
+  font-family: 'Merriweather', serif;
+
+  src: url(../../src/fonts/Merriweather-Regular.ttf);
+  font-size: 28px;
+  font-weight: 400;
+}

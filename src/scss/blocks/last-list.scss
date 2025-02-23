@@ -1,0 +1,10 @@
+@use '../fonts';
+@use '../variables';
+
+.last-list {
+    @media screen and (min-width: 1024px) {
+        @include fonts.golosFont;
+        line-height: 140%;
+        
+    }
+}

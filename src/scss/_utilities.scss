@@ -1,0 +1,46 @@
+@use '_variables.scss';
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-width: 375px;
+  // width: 100%;
+  width: 375px;
+  margin: 0 auto;
+
+  @media screen and (min-width: 1024px) {
+    width: 1440px;
+    background-color: #e5e5e5;
+  }
+}
+
+br {
+  @media screen and (min-width: 1024px) {
+    display: none;
+  }
+}
+
+a:hover {
+  color: #548fff;
+}
+
+select {
+  width: 18px;
+  border: none;
+  background: #e5e5e5;
+  color: variables.$blueText;
+  margin-left: 5px;
+  margin-top: 3px;
+  @media screen and (max-width: 1023px) {
+    width: 154px;
+    &:selection {
+      background: #e5e5e5;
+    }
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
