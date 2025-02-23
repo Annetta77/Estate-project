@@ -27,15 +27,15 @@ a:hover {
 }
 
 select {
-  appearance: none; /* Убираем стандартный стиль */
-  -webkit-appearance: none; /* Для WebKit-браузеров */
-  -moz-appearance: none;
-  width: 18px;
-  border: none;
-  background: #e5e5e5;
-  color: variables.$blueText;
-  margin-left: 5px;
-  margin-top: 3px;
+  // appearance: none; /* Убираем стандартный стиль */
+  // -webkit-appearance: none; /* Для WebKit-браузеров */
+  // -moz-appearance: none;
+  // width: 18px;
+  // border: none;
+  // background: #e5e5e5;
+  // color: variables.$blueText;
+  // margin-left: 5px;
+  // margin-top: 3px;
   @media screen and (max-width: 1023px) {
     display: none;
     // &:selection {

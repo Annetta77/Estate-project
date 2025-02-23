@@ -102,6 +102,11 @@
     margin-right: 175px;
   }
 }
+@media screen and (max-width: 1023px) {
+  .nav__select-list {
+    display: none;
+  }
+}
 @media screen and (min-width: 320px) {
   .nav__select-list__list-item {
     display: block;

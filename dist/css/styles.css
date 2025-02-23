@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @font-face {
   font-family: "Merriweather", serif;
   src: url(../../src/fonts/Merriweather-Bold.ttf);
@@ -49,17 +48,6 @@ a:hover {
   color: #548fff;
 }
 
-select {
-  appearance: none; /* Убираем стандартный стиль */
-  -webkit-appearance: none; /* Для WebKit-браузеров */
-  -moz-appearance: none;
-  width: 18px;
-  border: none;
-  background: #e5e5e5;
-  color: #0048ce;
-  margin-left: 5px;
-  margin-top: 3px;
-}
 @media screen and (max-width: 1023px) {
   select {
     display: none;
@@ -299,6 +287,11 @@ select:focus {
     flex-direction: row;
     gap: 52px;
     margin-right: 175px;
+  }
+}
+@media screen and (max-width: 1023px) {
+  .nav__select-list {
+    display: none;
   }
 }
 @media screen and (min-width: 320px) {
