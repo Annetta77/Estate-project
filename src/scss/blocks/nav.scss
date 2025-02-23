@@ -6,7 +6,6 @@
     display: none;
     height: 0;
     z-index: 5;
-
   }
   &.open {
     @media screen and (max-width: 1023px) {
@@ -100,7 +99,7 @@
       position: relative;
       width: 18px;
       border: none;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       top: 3px;
     }
 

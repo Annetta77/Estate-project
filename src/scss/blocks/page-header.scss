@@ -9,7 +9,7 @@
   align-items: center;
   padding-top: 18px;
   z-index: 6;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 
   @media screen and (min-width: 1024px) {
     width: 1280px;
@@ -20,8 +20,7 @@
     justify-content: space-between;
     margin: 0 auto;
     height: 76px;
-    background-color: #E5E5E5;
-
+    background-color: #e5e5e5;
   }
 
   &__btn {
@@ -30,11 +29,11 @@
     background-color: variables.$whiteText;
     padding-left: 110px;
     @include fonts.golosFont;
-    background-color: #FFFFFF;
+    background-color: #ffffff;
 
     @media screen and (min-width: 1024px) {
       padding: 0;
-      background-color: #E5E5E5;
+      background-color: #e5e5e5;
       text-decoration: underline;
     }
   }

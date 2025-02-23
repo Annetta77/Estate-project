@@ -20,7 +20,6 @@
     padding-bottom: 23px;
     @media screen and (min-width: 1024px) {
       border: none;
-      
     }
 
     &--active {
@@ -52,7 +51,6 @@
     display: none;
     @media screen and (min-width: 1024px) {
       display: block;
-      
     }
 
     &--active {
@@ -63,7 +61,6 @@
 
       @media screen and (min-width: 1024px) {
         border: none;
-        
       }
 
       & > li {

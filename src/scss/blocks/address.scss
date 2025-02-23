@@ -2,13 +2,12 @@
 @use '../variables';
 
 .address {
-    font-style: normal;
-margin-bottom: 15px;
-width: 300px;
-    &__link{
-        text-decoration: none;
-        color: variables.$blueText;
-        display: inline-block;
-    }
-
+  font-style: normal;
+  margin-bottom: 15px;
+  width: 300px;
+  &__link {
+    text-decoration: none;
+    color: variables.$blueText;
+    display: inline-block;
+  }
 }

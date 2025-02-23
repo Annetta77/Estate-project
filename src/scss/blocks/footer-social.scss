@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: row;
   gap: 10px;
-list-style: none;
-margin-bottom: 20px;
+  list-style: none;
+  margin-bottom: 20px;
   &__item--telegram {
     background-image: url('../../src/images/telegram.svg');
     background-size: contain;
