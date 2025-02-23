@@ -84,16 +84,10 @@
   }
 
   &__select-list {
-   @media screen and (max-width: 1023px) {
-    display: none;
-    
-   }
+    @media screen and (max-width: 1023px) {
+      display: none;
+    }
 
-    // @media screen and (min-width: 1024px) {
-    //   display: block;
-    //   color: #0048ce;
-    //   background-color: #f1f4fd;
-    // }
     &__list-item {
       @media screen and (min-width: 320px) {
         display: block;
