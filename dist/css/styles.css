@@ -198,6 +198,7 @@ select:focus {
 @media screen and (max-width: 1023px) {
   .nav.open {
     display: block;
+    z-index: 2;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -431,7 +432,7 @@ select:focus {
   width: 375px;
   height: 960px;
   background: url("../../src/images/header-Photo-mob-back.png");
-  z-index: -1;
+  z-index: 0;
   position: relative;
   margin-bottom: 40px;
 }
@@ -573,11 +574,11 @@ select:focus {
 }
 @media screen and (min-width: 1024px) {
   .main-header__button:hover {
-    background: #0048CE;
+    background: #0048ce;
     cursor: pointer;
   }
   .main-header__button:active {
-    background: #003AA6;
+    background: #003aa6;
   }
 }
 .main-header__arrow-cont {

@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   function updateSelect() {
     if (screenWidth < 1023) {
-      select.setAttribute('multiple', 'multiple');
+      select.setAttribute('multiple', '');
     } else {
       select.removeAttribute('multiple');
     }
