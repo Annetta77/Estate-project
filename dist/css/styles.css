@@ -62,11 +62,11 @@ select {
 }
 @media screen and (max-width: 1023px) {
   select {
+    appearance: none; /* Убираем стандартный стиль */
+    -webkit-appearance: none; /* Для WebKit-браузеров */
+    -moz-appearance: none;
     width: 154px;
-    height: 128px;
-  }
-  select:selection {
-    background: #e5e5e5;
+    height: 100%;
   }
 }
 select:focus {
